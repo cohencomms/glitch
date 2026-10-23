@@ -28,7 +28,7 @@
   <div class="grid-9-3"><h1 class="h1-l main">Let's talk.</h1><div class="hero-side side"><p class="lede">Book a free 30-minute consult or request an AI visibility audit. I reply within one business day.</p></div></div>
 </div></section>
 <section class="section" style="padding-top:0"><div class="wrap contact-grid">
-  <form class="form" id="contact-form" novalidate>
+  <form class="form" id="contact-form" action="https://formspree.io/f/xaeewgdp" method="POST" novalidate><input type="hidden" name="_subject" value="New glitchpr.com inquiry">
     <fieldset class="choice"><legend>What would you like?</legend>
       <div class="choice-opts">
         <label><input type="radio" name="kind" id="kind-consult" value="consult" checked> Free 30-minute consult</label>
@@ -70,7 +70,7 @@
     if(!n.value.trim()){s.textContent="Add your name so I know who to reply to.";n.focus();return;}
     if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m.value)){s.textContent="That email looks incomplete. Check it and try again.";m.focus();return;}
     s.textContent="Sending...";
-    fetch(f.action||"https://formspree.io/f/FORM_ID",{method:"POST",body:new FormData(f),headers:{Accept:"application/json"}}).then(function(r){s.textContent=r.ok?"Got it. You\u2019ll hear from me within one business day.":"That didn\u2019t send. Text +1 415 819 7791 instead.";}).catch(function(){s.textContent="That didn\u2019t send. Text +1 415 819 7791 instead.";});
+    fetch(f.action||"https://formspree.io/f/xaeewgdp",{method:"POST",body:new FormData(f),headers:{Accept:"application/json"}}).then(function(r){s.textContent=r.ok?"Got it. You\u2019ll hear from me within one business day.":"That didn\u2019t send. Text +1 415 819 7791 instead.";}).catch(function(){s.textContent="That didn\u2019t send. Text +1 415 819 7791 instead.";});
   });
   var b=document.getElementById("copy-phone");
   b.addEventListener("click",function(){
