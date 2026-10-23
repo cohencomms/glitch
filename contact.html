@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Book a Free PR Consult | Glitch PR</title>
+<meta name="description" content="Book a free 30-minute PR consult or request an AI visibility audit from Glitch PR.">
+<link rel="canonical" href="https://www.glitchpr.com/contact"><meta property="og:title" content="Book a Free PR Consult | Glitch PR"><meta property="og:description" content="Book a free 30-minute PR consult or request an AI visibility audit from Glitch PR."><meta property="og:url" content="https://www.glitchpr.com/contact"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta property="og:image" content="https://www.glitchpr.com/og.png"><meta name="twitter:image" content="https://www.glitchpr.com/og.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="wordmark" href="/" aria-label="Glitch PR home">glitch.</a>
+    <ul class="nav-links"><li><a href="/ai-pr-agency">PR</a></li><li><a href="/geo-services">AI search visibility</a></li><li><a href="/work">Work</a></li><li><a href="/why-pr-matters-for-ai-search">Insights</a></li><li><a href="/about">About</a></li></ul>
+    <a class="btn btn-inverse nav-cta" href="/contact">Book a consult</a>
+    <details class="menu">
+      <summary aria-label="Open menu">Menu <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" fill="none"/></svg></summary>
+      <nav class="menu-panel" aria-label="Mobile"><a href="/ai-pr-agency">PR</a><a href="/geo-services">AI search visibility</a><a href="/work">Work</a><a href="/why-pr-matters-for-ai-search">Insights</a><a href="/about">About</a><a class="btn btn-primary" href="/contact">Book a free 30-minute consult</a></nav>
+    </details>
+  </div>
+</header>
+<section class="page-head"><div class="wrap">
+  <span class="label">Contact</span>
+  <div class="grid-9-3"><h1 class="h1-l main">Let's talk.</h1><div class="hero-side side"><p class="lede">Book a free 30-minute consult or request an AI visibility audit. I reply within one business day.</p></div></div>
+</div></section>
+<section class="section" style="padding-top:0"><div class="wrap contact-grid">
+  <form class="form" id="contact-form" novalidate>
+    <fieldset class="choice"><legend>What would you like?</legend>
+      <div class="choice-opts">
+        <label><input type="radio" name="kind" id="kind-consult" value="consult" checked> Free 30-minute consult</label>
+        <label><input type="radio" name="kind" id="kind-audit" value="audit"> AI visibility audit</label>
+      </div>
+    </fieldset>
+    <div class="row2">
+      <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" autocomplete="organization"></div>
+      <div class="field"><label for="f-site">Website</label><input id="f-site" name="website" type="url" placeholder="https://"></div>
+    </div>
+    <div class="field"><label for="f-msg">What's coming up?</label><textarea id="f-msg" name="message" placeholder="A launch, a raise, a competitor showing up in AI answers..."></textarea></div>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center"><button class="btn btn-primary" type="submit">Send request</button><p class="status" id="f-status" role="status"></p></div>
+  </form>
+  <aside class="direct" aria-label="Direct contact">
+    <div><span class="label">Text or call</span><span class="phone-big" id="phone">+1 415 819 7791</span><button class="copy" type="button" id="copy-phone">Copy number</button></div>
+    <div><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/aaron-c-cohen/" rel="noopener">Aaron Cohen</a></div>
+    <div><span class="label">Response time</span><span>Within one business day</span></div>
+  </aside>
+</div></section>
+<section class="section" style="padding-top:0"><div class="wrap">
+  <div class="sec-head rule"><span class="label">What happens next</span><div class="sec-body"><h2 class="h2">No pitch deck. Just a conversation.</h2></div></div>
+  <div class="grid-3">
+    <div class="cell"><h3>I reply within a day</h3><p>With a couple of times that work.</p></div>
+    <div class="cell"><h3>We talk for 30 minutes</h3><p>About your goals, your news and your timing.</p></div>
+    <div class="cell"><h3>You get a written plan</h3><p>Scope and cost, in plain terms. No obligation.</p></div>
+  </div>
+</div></section>
+<script>
+(function(){
+  try{ if(location.hash==="#audit"){document.getElementById("kind-audit").checked=true;} }catch(e){}
+  var f=document.getElementById("contact-form"),s=document.getElementById("f-status");
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var n=document.getElementById("f-name"),m=document.getElementById("f-email");
+    if(!n.value.trim()){s.textContent="Add your name so I know who to reply to.";n.focus();return;}
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m.value)){s.textContent="That email looks incomplete. Check it and try again.";m.focus();return;}
+    s.textContent="Sending...";
+    fetch(f.action||"https://formspree.io/f/FORM_ID",{method:"POST",body:new FormData(f),headers:{Accept:"application/json"}}).then(function(r){s.textContent=r.ok?"Got it. You\u2019ll hear from me within one business day.":"That didn\u2019t send. Text +1 415 819 7791 instead.";}).catch(function(){s.textContent="That didn\u2019t send. Text +1 415 819 7791 instead.";});
+  });
+  var b=document.getElementById("copy-phone");
+  b.addEventListener("click",function(){
+    function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById("phone"));var x=getSelection();x.removeAllRanges();x.addRange(r);b.textContent="Selected";}
+    try{navigator.clipboard.writeText("+14158197791").then(function(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy number"},1600)},sel);}catch(err){sel();}
+  });
+})();
+</script>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><a class="wordmark" href="/">glitch.</a><p>Glitch PR, founded by Aaron Cohen, PR and AI search visibility for AI and B2B tech companies.</p></div>
+      <div><h4>Services</h4><ul><li><a href="/ai-pr-agency">AI PR agency</a></li><li><a href="/startup-pr">Startup PR</a></li><li><a href="/geo-services">GEO services</a></li><li><a href="/ai-visibility-audit">AI visibility audit</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="/work">Work</a></li><li><a href="/why-pr-matters-for-ai-search">Insights</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li class="phone">+1 415 819 7791</li><li><a href="https://www.linkedin.com/in/aaron-c-cohen/" rel="noopener">Aaron on LinkedIn</a></li><li><a href="https://www.linkedin.com/company/glitch-pr" rel="noopener">Glitch PR on LinkedIn</a></li></ul></div>
+    </div>
+    <div class="foot-bar"><span>© 2026 Glitch PR</span><span>Portland, Oregon</span></div>
+  </div>
+</footer>
+</body>
+</html>
